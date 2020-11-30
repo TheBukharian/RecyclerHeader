@@ -15,55 +15,66 @@
         android:layout_alignParentTop="true"
         app:cardElevation="10dp"
         >
-        <RelativeLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:layout_margin="20dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
             >
-            <ImageView
-                android:id="@+id/blue"
-                android:src="@drawable/ic_blue"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="35dp"
-                android:layout_marginStart="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <ImageView
-                android:id="@+id/red"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/blue"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginBottom="50dp"
-                android:src="@drawable/ic_baseline_adjust_24" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_alignTop="@+id/blue"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="-8dp"
-                android:layout_marginEnd="40dp"
-                android:layout_toEndOf="@+id/blue"
-                android:paddingStart="10dp"
-                android:hint="Pick up Location" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_alignTop="@+id/red"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="-8dp"
-                android:layout_marginEnd="40dp"
-                android:layout_toEndOf="@+id/blue"
-                android:paddingStart="10dp"
-                android:hint="Where to?" />
+                >
+
+                <ImageView
+                    android:id="@+id/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/edit1"
+                    android:layout_alignBottom="@+id/edit1"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_blue" />
 
 
-        </RelativeLayout>
+                <EditText
+                    android:id="@+id/edit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_toEndOf="@+id/blue"
+                    android:hint="Pick up Location"
+                    android:paddingStart="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mainRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/edit1"
+                    android:layout_alignStart="@+id/blue"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_alignEnd="@+id/edit1"
+                    tools:listitem="@layout/item_add_destination"
+                    tools:itemCount="2"
+                    android:layout_marginBottom="10dp"
+                     />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
 
     </androidx.cardview.widget.CardView>
 

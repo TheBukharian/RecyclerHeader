@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edit3"
+        android:layout_alignBottom="@+id/edit3"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_baseline_adjust_24"
+        app:tint="#424242" />
+
+    <EditText
+        android:layout_alignParentTop="true"
+        android:id="@+id/edit3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@+id/delBtn"
+        android:layout_toEndOf="@+id/black"
+        android:paddingStart="10dp"
+        android:hint="Through..." />
+    <ImageButton
+    android:backgroundTint="#fff"
+    android:id="@+id/delBtn"
+    android:layout_width="35dp"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/edit2"
+    android:layout_alignBottom="@+id/edit2"
+    android:src="@drawable/ic_del"
+        android:tint="@color/purple_500"
+android:layout_alignParentEnd="true"
+    />
+
+
+</RelativeLayout>

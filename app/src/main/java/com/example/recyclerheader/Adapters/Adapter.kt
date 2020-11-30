@@ -1,23 +1,31 @@
-package com.example.recyclerheader
+package com.example.recyclerheader.Adapters
 
 import android.widget.TextView
+import com.example.recyclerheader.R
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
+import kotlinx.android.synthetic.main.red_item.view.*
 
 
-class ItemView(val ins:RoadInfo):Item<GroupieViewHolder>(){
+class ItemView(val ins: RoadInfo):Item<GroupieViewHolder>(){
 
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
-
         val title = viewHolder.itemView.findViewById<TextView>(R.id.titleText)
         val text = viewHolder.itemView.findViewById<TextView>(R.id.TexT)
 
             title.text = ins.title_text
             text.text = ins.sub_text
+
     }
 
-    override fun getLayout(): Int { return R.layout.item }
+            override fun getLayout(): Int { return R.layout.item
+    }
 }
+
+
+
+
+
 class HeaderView():Item<GroupieViewHolder>(){
     override fun bind(viewHolder: GroupieViewHolder, position: Int) { }
     override fun getLayout(): Int = R.layout.header_item

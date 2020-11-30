@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -46,5 +47,8 @@ dependencies {
     implementation "com.xwray:groupie-kotlin-android-extensions:2.8.1"
     implementation "com.xwray:groupie:2.8.1"
     implementation "com.xwray:groupie-kotlin-android-extensions:2.8.1"
+    implementation "com.github.StephenVinouze.AdvancedRecyclerView:core:2.0.5"
+
+
 
 }
