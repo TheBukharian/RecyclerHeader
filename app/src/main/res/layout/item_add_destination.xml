@@ -14,8 +14,9 @@
         android:layout_alignTop="@+id/edit3"
         android:layout_alignBottom="@+id/edit3"
         android:layout_marginTop="2dp"
-        android:src="@drawable/ic_baseline_adjust_24"
-        app:tint="#424242" />
+        android:src="@drawable/ic_down"
+        android:scaleY="1.5"
+        app:tint="#5E424242" />
 
     <EditText
         android:layout_alignParentTop="true"
@@ -27,7 +28,7 @@
         android:paddingStart="10dp"
         android:hint="Through..." />
     <ImageButton
-    android:backgroundTint="#fff"
+    android:backgroundTint="#FAF1A1"
     android:id="@+id/delBtn"
     android:layout_width="35dp"
     android:layout_height="wrap_content"
