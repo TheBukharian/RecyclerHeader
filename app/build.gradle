@@ -48,6 +48,8 @@ dependencies {
     implementation "com.xwray:groupie:2.8.1"
     implementation "com.xwray:groupie-kotlin-android-extensions:2.8.1"
     implementation "com.github.StephenVinouze.AdvancedRecyclerView:core:2.0.5"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
 
 
 
