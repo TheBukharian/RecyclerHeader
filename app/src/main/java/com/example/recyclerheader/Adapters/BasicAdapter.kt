@@ -21,15 +21,6 @@ class BasicAdapter(private val items: MutableList<String>) : RecyclerView.Adapte
 
     override fun getItemCount(): Int = items.size
 
-    fun addItem(name: String) {
-        items.add(name)
-        notifyItemInserted(items.size)
-    }
-
-    fun removeAt(position: Int) {
-        items.removeAt(position)
-        notifyItemRemoved(position)
-    }
 
     class VH(parent: ViewGroup) : RecyclerView.ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item_add_destination, parent, false)) {

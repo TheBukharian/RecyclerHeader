@@ -28,8 +28,6 @@ class DestinationAdapter(val activity: MainActivity, var dataList: ArrayList<Str
         init {
             Log.d("lastindex", "${dataList.lastIndex}")
 
-
-
             itemView.addBtn.setOnClickListener {
                 if (dataList.size < 4) {
                     itemView.addBtn.visibility = View.VISIBLE
@@ -39,11 +37,6 @@ class DestinationAdapter(val activity: MainActivity, var dataList: ArrayList<Str
 
                 dataList.add(0, "owioeiwoe")
                 notifyItemInserted(dataList.lastIndex)
-
-
-
-
-
             }
         }
 
@@ -54,7 +47,6 @@ class DestinationAdapter(val activity: MainActivity, var dataList: ArrayList<Str
         val move = itemView.findViewById<ImageButton>(R.id.moveBtn)
 
         init {
-            
             itemView.delBtn.setOnClickListener {
 
                 if (dataList.size < 4) {
