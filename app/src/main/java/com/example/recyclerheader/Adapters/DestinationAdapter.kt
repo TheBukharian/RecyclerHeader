@@ -17,7 +17,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 
-class DestinationAdapter(val activity: MainActivity, var dataList: ArrayList<String>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class DestinationAdapter(private val activity: MainActivity, var dataList: ArrayList<String>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
 
     var isDeleteBoolean=false
